@@ -1,0 +1,7 @@
+GetStdHandle 是库函数。含在 Kernel32.lib / Kernel32.dll 里。用来获取 标准输入输出设备的 “句柄”。
+这里的东西能更改吗 -- 可以，但只有：
+STD_INPUT_HANDLE
+STD_OUTPUT_HANDLE
+STD_ERROR_HANDLE
+共3 个。对应 stdin, stdout, strerr 三个 设备。
+即默认的 键盘，屏幕（可转向磁盘输出），屏幕（不可转向磁盘输出）。
