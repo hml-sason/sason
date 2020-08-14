@@ -28,7 +28,7 @@ int main()
 		cin >> ax >> ay;
 		cin >> bx >> by;
 		x = abs(ax - bx);
-		y = abs(ay - by);			//¹Ø¼ü£º¹«Ê½¡ªÔÚÍ¬Ò»¸ö¾ØÕóÖÐ£¬Èôabs(ax-bx)ºÍabs(ay-by)ÓÐÒ»¸ö¹«Ô¼Êý£¬ÔòÁ½µãÏàÁ¬£¬Ö±ÏßÉÏ¾Í»áÓÐÆäËûµã¡£ 
+		y = abs(ay - by);			//å…³é”®ï¼šå…¬å¼â€”åœ¨åŒä¸€ä¸ªçŸ©é˜µä¸­ï¼Œè‹¥abs(ax-bx)å’Œabs(ay-by)æœ‰ä¸€ä¸ªå…¬çº¦æ•°ï¼Œåˆ™ä¸¤ç‚¹ç›¸è¿žï¼Œç›´çº¿ä¸Šå°±ä¼šæœ‰å…¶ä»–ç‚¹ã€‚ 
 		if(js(x,y) == 1) cout << "yes" << endl;
 		else cout << "no" << endl;
 	}
@@ -36,6 +36,6 @@ int main()
 }
 int js(int x1,int y1)
 {
-	if(y1 != 0) return js(y,x1 % y1);
+	if(y1 != 0) return js(y1,x1 % y1);
 	else return x1;
 }
